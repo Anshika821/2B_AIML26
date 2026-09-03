@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online shopping product management</title>
+</head>
+<body>
+    <script>
+        let product={
+            productID:101,
+            productname:"laptop",
+            price:600,
+            quantity:5,
+
+        calculateTotalPrice: function() {
+        return this.price * this.quantity;
+        },
+        updateQuantity: function(newQty) {
+        this.quantity = newQty;
+        },
+        
+           displayInfo: function() {
+            document.write("Product ID: " + this.productId + "<br>");
+            document.write("Product Name: " + this.productName + "<br>");
+           document.write("Price: ₹" + this.price + "<br>");
+           document.write("Quantity: " + this.quantity + "<br>");
+          document.write("Total Price: ₹" + this.calculateTotalPrice() + "<br>");
+        }
+        };
+         product.displayInfo();
+            document.write("<hr>");
+          product.updateQuantity(5);
+           product.displayInfo();
+    </script>
+</body>
+</html>
