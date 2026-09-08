@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object literals</title>
+</head>
+<body>
+    <script>
+        // let name="Anshika";
+        // let rollNumber=31;
+        // let data={
+        //     name,
+        //     rollNumber
+        // }
+        // console.log(data.name)
+        // console.log(data.rollNumber)
+        let F="First"
+        let L="Last"
+        let data={
+            [F]:"Anshika",
+            [L]:"chaudhary",
+        'show'(){
+        console.log(this.First)
+        console.log(this.Last)
+        }
+  
+        }
+        console.log(data['show']());
+        
+      
+    </script>
+</body>
+</html>
